@@ -55,7 +55,6 @@ const video = (videosSelector, videoPageSelector, videoCloseSelector, videoBlock
   closePlayer();
   init();
   
-    
 };
 
 export default video;

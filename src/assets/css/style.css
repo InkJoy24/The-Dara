@@ -253,7 +253,6 @@ body {
 
     display: flex;
     justify-content: space-between;
-    gap: 8.33%;
 
 }
 
@@ -261,6 +260,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 8.33%;
     
     max-width: 634px;
 
@@ -456,8 +456,6 @@ body {
 
 .video__container {
     display: flex;
-    column-gap: 16px;
-
     flex-wrap: wrap;
     align-items: baseline;
     margin: 70px auto 0 auto;
@@ -467,17 +465,19 @@ body {
 .video__block__right {
     flex-basis: 20%;
     flex-grow: 1;
+    margin-right: 16px;
 }
 
 .video__block__left {
     flex-basis: 20%;
     flex-grow: 1;
+    margin-right: 16px;
 }
 
 .video {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    margin-right: 16px;
 
     flex-basis: 20%;
     flex-grow: 1;
@@ -486,6 +486,7 @@ body {
 
     cursor: pointer;
 }
+
 
 
 .video__block__center {
@@ -513,8 +514,13 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    margin-bottom: 16px;
 }
 
+.no-margin-right {
+    margin-right: 0;
+}
 
 /* STORY */
 
@@ -648,12 +654,13 @@ body {
 
 .my_performances__container {
     display: flex;
-    gap: 10%;
+    /* gap: 10%; */
 }
 
 .my_performances__container__left {
     max-width: 603px;
     flex-basis: 41.67%;
+    margin-right: 10%;
 }
 
 .my_performances__container__right {
@@ -721,13 +728,15 @@ body {
     padding: 50px 0 50px 0;
 
     display: flex;
-    gap: 16px;
+    /* gap: 16px; */
 
     border-bottom: solid 1px #323232;
 }
 
 .reviews__block__img {
     flex-basis: 50%;
+    margin-right: 16px;
+
 }
 
 .reviews__block__title {
@@ -765,6 +774,11 @@ body {
     flex-basis: 50%;
     flex-direction: column;
     justify-content: space-between;
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 /* FOOTER */
