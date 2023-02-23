@@ -1,0 +1,891 @@
+
+body {
+    background-color: #171717;
+    background-image: url(../img/background.svg);
+}
+
+:root {
+    --max-width: 1544px;
+    --font-size: 105px;
+}
+
+/* HEADER */
+
+.header {
+    padding: 50px 0 50px 0;
+    margin-top: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #171717;
+    background-image: url(../img/background.svg);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 20px;
+    max-width: var(--max-width);
+
+}
+
+.header__logo {
+    cursor: pointer;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 404px;
+    height: 20px;
+}
+
+.header__nav__link {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C7C7C7;
+
+    cursor: pointer;
+}
+
+.header__nav__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 3px;
+    border-bottom: 2px solid #C7C7C7;
+    transition: all 0.3s;
+
+}
+
+.header__nav__link:hover::after {
+    width: 100%;
+}
+
+/* FRONT SIDE */ 
+
+.front-side {
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+.string-1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 88px;
+}
+
+.string-1__block-1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+}
+
+
+.string-1__block-2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.string-2 {
+    margin-top: 5px;
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: var(--font-size);
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 88px;
+}
+
+.string-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 88px;
+}
+
+.string-3__block-1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: var(--font-size);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.string-3__block-2 {
+    margin-top: 17px;
+    max-width: 504px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: right;
+    text-align: end;
+    color: #BDBDBD;
+}
+
+.front-side__img {
+    margin-top: 70px;
+}
+
+.front-side__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ABOUT */
+
+.about {
+    margin-top: 170px;
+    
+}
+
+.about__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.about__title {
+    margin-left: 25%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.about__block__container {
+    display: flex;
+    margin-left: 25%;
+    max-width: 1154px;
+}
+
+.about__block {
+    margin-top: 70px;
+    margin-right: 40px;
+    width: 350px;
+    height: 185px;
+
+    border-right: solid 1px #323232;
+}
+
+.no__border {
+    border-right: none;
+}
+
+.about__block__number {
+    margin-bottom: 30px;
+
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+
+.about__block__text {
+    margin-right: 39px;
+    max-width: 310px;
+    max-height: 108px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+
+.about__text_1 {
+    margin-top: 60px;
+    margin-left: 50%;
+
+    max-width: 764px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.about__text_2 {
+    margin-top: 40px;
+    margin-left: 50%;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.about__photo {
+    margin-top: 180px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 8.33%;
+
+}
+
+.about__photo__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 634px;
+
+}
+
+.about__photo_right {
+    max-width: 764px;
+}
+
+.about__photo__text {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+/* RELEASES */
+
+.releases {
+    margin: 100px auto auto;
+    max-width: var(--max-width);
+}
+
+.releases__title {
+    margin-bottom: 70px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+.release__container {
+    display: flex;
+    margin-bottom: 52px;
+}
+
+
+.release__cover {
+    flex-basis: 25%;
+}
+
+.release__block_name_year {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 25%;
+    margin-left: 16px;
+    max-width: 374px;
+}
+
+.release__name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.release__name__link {
+    cursor: pointer;
+    color: inherit;
+}
+
+.release__name__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 3px;
+    border-bottom: 2px solid #C7C7C7;
+    transition: all 0.3s;
+}
+
+.release__name__link:hover::after {
+    width: 100%;
+}
+
+.release__year {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.release__text {
+    flex-basis: 25%;
+    max-width: 374px;
+    margin-left: 16px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.release__link {
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.release__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 3px;
+    border-bottom: 2px solid #C7C7C7;
+    transition: all 0.3s;
+
+}
+
+.release__link:hover::after {
+    width: 65px;
+}
+
+.release__link__block {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 25%;
+}
+
+.release__block {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+
+/* THE TRACK "KULT" */
+
+.the_track_kult {
+    margin: 180px auto 0 auto;
+    max-width: var(--max-width);
+}
+
+.the_track_kult__title {
+    margin-bottom: 70px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.the_track_kult__container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.the_track_kult__img {
+    width: 764px;
+}
+
+.the_track_kult__text {
+    margin-left: 16px;
+    max-width: 764px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #E0E0E0;
+}
+
+/* WORK */
+
+.work {
+    margin: 170px auto 0 auto;
+    max-width: var(--max-width);
+}
+
+.video__container {
+    display: flex;
+    column-gap: 16px;
+
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 70px auto 0 auto;
+    
+} 
+
+.video__block__right {
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.video__block__left {
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    flex-basis: 20%;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 40px;
+
+    cursor: pointer;
+}
+
+
+.video__block__center {
+    justify-content: center;
+    flex-basis: 42%;
+    flex-grow: 2;
+}
+
+.work__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.video__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* STORY */
+
+.story {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 180px auto 0 auto;
+    max-width: var(--max-width);
+}
+
+.story__right {
+    flex-basis: 50%;
+    max-width: 765px;
+}
+
+.story__right__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 70px;
+}
+
+.story__title {
+    flex-basis: 50%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.story__right__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.story__right__text {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+
+}
+
+/* GIGS IN MEXICO */
+
+.gigs_in_mexico {
+    max-width: var(--max-width);
+    margin: 180px auto 0 auto;
+
+}
+
+.gigs_in_mexico__title {
+    margin-bottom: 70px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.gigs_in_mexico__block {
+    display: flex;
+    padding: 50px 0;
+    border-top: solid 1px #343434;
+    border-bottom: solid 1px #343434;
+}
+
+.gigs_in_mexico__block__number {
+    flex-basis: 25%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.gigs_in_mexico__block__title {
+    flex-basis: 50%;
+
+    width: 374px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.gigs_in_mexico__block__text {
+    flex-basis: 25%;
+
+    width: 374px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+/* MY PERFORMANCES */
+
+.my_performances {
+    margin: 180px  auto 180px auto;
+    max-width: var(--max-width);
+
+}
+
+.my_performances__container {
+    display: flex;
+    gap: 10%;
+}
+
+.my_performances__container__left {
+    max-width: 603px;
+    flex-basis: 41.67%;
+}
+
+.my_performances__container__right {
+    max-width: 764px;
+    flex-basis: 50%;
+}
+
+.my_performances__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.my_performances__text {
+    margin-top: 20px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #E0E0E0;
+}
+
+.my_performances__right__title {
+    margin-top: 80px;
+    margin-bottom: 25px;
+    max-width: 609px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+/* REVIEWS */
+
+.reviews {
+    max-width: var(--max-width);
+    margin: 180px auto 0 auto;
+
+}
+
+.reviews__title {
+    margin-bottom: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.reviews__block {
+    padding: 50px 0 50px 0;
+
+    display: flex;
+    gap: 16px;
+
+    border-bottom: solid 1px #323232;
+}
+
+.reviews__block__img {
+    flex-basis: 50%;
+}
+
+.reviews__block__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.reviews__block__place {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #F2F2F2;
+}
+
+.reviews__block__text {
+    max-width: 374px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.reviews__block__content {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+.footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 180px 0 80px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__block {
+  max-width: 374px;
+}
+
+.footer__block__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.footer__link {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+
+.footer__link__block {
+    margin: 20px 0;
+}
+
+.author__block {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #E0E0E0;
+}
+
+/* WORK PAGE */
+
+.work__page {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 200ms ease-in
+
+}
+
+.work__page__container {
+    flex-basis: 81%;
+}
+
+.work__page__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    opacity: 0.7;
+
+}
+
+.work__page__top__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.work__page__close {
+    cursor: pointer;
+}
+
+.work__page__video__block {
+    height: 80vh;
+}
+
+/* MEDIA */
+
+@media (max-width: 1440px) {
+    :root {
+        --max-width: 1232px;
+        --font-size: 88px;
+    }
+
+    .story__title {
+        font-size: 36px;
+    }
+
+    .video {
+        margin-bottom: 30px;
+    } 
+}

@@ -1,0 +1,413 @@
+
+body {
+    background-color: #171717;
+    background-image: url(../img/background.svg);
+}
+
+/* HEADER */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 74px auto 100px auto;
+    max-width: 1544px;
+    height: 20px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 404px;
+    height: 20px;
+}
+
+.header__nav__link {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #C7C7C7;
+}
+
+.header__nav__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 3px;
+    border-bottom: 2px solid #C7C7C7;
+    transition: all 0.3s;
+
+}
+
+.header__nav__link:hover::after {
+    width: 30px;
+}
+
+/* FRONT SIDE */ 
+
+.front-side {
+    margin-top: 36px;
+    margin: 0 auto;
+    max-width: 1544px;
+}
+
+.string-1 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 88px;
+}
+
+.string-1__block-1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 105px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.string-1__block-2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 105px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.string-2 {
+    margin-top: 5px;
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 105px;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 88px;
+}
+
+.string-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 88px;
+}
+
+.string-3__block-1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 105px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.string-3__block-2 {
+    margin-top: 17px;
+    max-width: 504px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: right;
+    text-align: end;
+    color: #BDBDBD;
+}
+
+.front-side__img {
+    margin-top: 70px;
+}
+
+.front-side__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ABOUT */
+
+.about {
+    margin-top: 170px;
+    
+}
+
+.about__container {
+    max-width: 1544px;
+    margin: 0 auto;
+}
+
+.about__title {
+    margin-left: 25%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.about__block__container {
+    display: flex;
+    margin-left: 25%;
+}
+
+.about__block {
+    margin-top: 70px;
+    margin-right: 40px;
+    width: 350px;
+    height: 185px;
+
+    border-right: solid 1px #323232;
+}
+
+.about__block__number {
+    margin-bottom: 30px;
+
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+
+.about__block__text {
+    width: 310px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.about__block_3 {
+    margin-top: 70px;
+    margin-right: 40px;
+    width: 350px;
+    height: 185px;
+
+}
+
+.about__text_1 {
+    margin-top: 60px;
+    margin-left: 50%;
+
+    max-width: 764px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.about__text_2 {
+    margin-top: 40px;
+    margin-left: 50%;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.about__photo {
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1544px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about__photo__text {
+    margin-top: 182px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+/* RELEASES */
+
+.releases {
+    margin: 100px auto auto;
+    max-width: 1544px;
+}
+
+.releases__title {
+    margin-bottom: 70px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+.release__vajra {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+.release__container {
+    display: flex;
+    justify-content: space-between;
+
+    height: 376px;
+    margin-bottom: 52px;
+}
+
+.release__cover {
+    display: flex;
+}
+
+.release__block_name_year {
+    margin-left: 16px;
+}
+
+.release__name {
+    margin-bottom: 316px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.release__year {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.release__text {
+    max-width: 374px;
+    margin-left: 16px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #BDBDBD;
+}
+
+.release__link {
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.release__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: 3px;
+    border-bottom: 2px solid #C7C7C7;
+    transition: all 0.3s;
+
+}
+
+.release__link:hover::after {
+    width: 65px;
+}
+
+.release__interstellar {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+.release__kult {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+.release__eastern_spirit {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+.release__deck_5_pool__skybar_sunset_set {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+.release__morninglory_night_set {
+    border-top: solid 1px #323232;
+    padding-top: 51px;
+}
+
+/* THE TRACK "KULT" */
+
+.the_track_kult {
+    margin: 180px auto 0 auto;
+    max-width: 1544px;
+}
+
+.the_track_kult__title {
+    margin-bottom: 70px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.the_track_kult__container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.the_track_kult__text {
+    margin-left: 16px;
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #E0E0E0;
+}
+
+/* WORK */
+
+.work {
+    margin: 170px auto 0 auto;
+}
