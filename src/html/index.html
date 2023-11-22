@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Стартовый шаблон</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="../fonts/Helvetica Neue/stylesheet.css" defer>
+		<link rel="stylesheet" href="../fonts/neue haas grotesk/stylesheet.css" defer>
+		<link rel="stylesheet" href="../fonts/Neue Montreal/stylesheet.css" defer>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main>
+			@@include('blocks/front-side.html')
+			<div class="front-side__img container">
+				<picture alt="photo" class="front-side__img">
+					<source srcset="../img/photo-1__mobile.jpg" media="(max-width: 768px)">
+					<img src="../img/photo-1.jpg" alt="photo">
+				</picture>
+			</div>
+			@@include('blocks/about.html')
+			<div class="about__photo container">
+				<div class="about__photo__left">
+					<img src="../../img/photo-2.jpg" alt="photo" class="about__photo__left__img" loading="lazy">
+					<div class="about__photo__text">In 2021, four of my tracks were released <br>on well-known labels.</div>
+				</div>
+				<div class="about__photo__right">
+					<img src="../../img/photo-3.jpg" alt="photo" loading="lazy">
+				</div>
+			</div>
+			@@include('blocks/music.html')
+			@@include('blocks/the-track-kult.html')
+			@@include('blocks/work.html')
+			@@include('blocks/modal-video.html')
+			@@include('blocks/story.html')
+			@@include('blocks/gigs.html')
+			@@include('blocks/my_performances.html')
+			@@include('blocks/reviews.html')
+		</main>
+		@@include('blocks/footer.html')
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

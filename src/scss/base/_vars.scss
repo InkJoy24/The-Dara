@@ -1,0 +1,44 @@
+:root {
+	--container-width: 100%;
+	--container-padding: 10%;
+
+	--font-main: 'Poppins', sans-serif;
+	--font-accent: 'Playfair Display', serif;
+	--title-font-size: 68px;
+
+	@media (max-width: 768px) {
+		--title-font-size: 48px
+	}
+
+	--text-color: #BDBDBD;
+
+	--font-size-front-side-title: 105px;
+	--line-height-front-side-title: 88px;
+
+	@media (max-width: 1740px) {
+		--font-size-front-side-title: 88px;
+	}
+
+	@media (max-width: 1360px) {
+		--font-size-front-side-title: 80px;
+	}
+
+	@media (max-width: 1240px) {
+		--font-size-front-side-title: 72px;
+		--line-height-front-side-title: 73px
+	}
+
+	@media (max-width: 1130px) {
+		--font-size-front-side-title: 64px;	
+	}
+
+	@media (max-width: 1004px) {
+		--font-size-front-side-title: 56px;	
+		--line-height-front-side-title: 68px
+	}
+
+	@media (max-width: 873px) {
+		--font-size-front-side-title: 48px;	
+		--line-height-front-side-title: 58px
+	}
+}

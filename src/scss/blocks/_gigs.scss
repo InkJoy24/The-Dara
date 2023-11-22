@@ -1,0 +1,124 @@
+.gigs_in_mexico {
+    margin-top: 180px;
+
+    @media (max-width:769px) {
+        margin-top: 140px;
+
+        @media (max-width: 450px) {
+            margin-top: 90px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 70px;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--title-font-size);
+        line-height: 70px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+
+            @media (max-width: 450px) {
+                line-height: 45px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        border-top: solid 1px #343434;
+        border-bottom: solid 1px #343434;
+
+        @media (max-width:769px) {
+            padding: 40px 0;
+            justify-content: none;
+            gap: 16px;
+
+            @media (max-width: 450px) {
+                display: block;
+                padding: 25px 0;
+                max-width: 377.83px;
+            }
+        }
+
+        &__number {
+            flex-basis: 25%;
+        
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 68px;
+            line-height: 70px;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @media (max-width:769px) {
+                font-size: 48px;
+                flex-basis: 16.6%;
+
+                @media (max-width: 450px) {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        &__title {
+            flex-basis: 50%;
+        
+            max-width: 374px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: #F2F2F2;
+
+            @media (max-width:769px) {
+                font-size: 20px;
+                flex-basis: 33.4%;
+
+
+                @media (max-width: 450px) {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__text {
+            flex-basis: 25%;
+        
+            width: 374px;
+            font-family: 'Neue Haas Grotesk Display Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 27px;
+            color: #BDBDBD;
+
+            @media (max-width:769px) {
+                font-size: 16px;
+                flex-basis: 50%;
+
+
+                @media (max-width: 450px) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+
+}
+

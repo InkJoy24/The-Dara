@@ -1,0 +1,251 @@
+.about {
+    margin-top: 180px;
+
+    @media (max-width: 768px) {
+        margin-top: 140px;
+
+        @media (max-width: 450px) {
+            margin-top: 90px;
+        }
+    }
+    
+    &__title {
+        margin-left: 25%;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--title-font-size);
+        line-height: 70px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #fff;
+
+        @media (max-width: 1260px) {
+            margin-left: 15%;
+        }
+
+        @media (max-width: 1020px) {
+            margin-left: 10%;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
+    }
+
+    &__block {
+        margin-right: 40px;
+        width: 349px;
+        height: auto;
+
+        @media (max-width: 768px) {
+            margin-right: 18px;
+            margin-top: 40px;
+
+            @media (max-width: 450px) {
+                width: 100%;
+                margin-top: 25px;
+                margin-right: 0;
+                padding-bottom: 25px;
+                padding-right: 0;
+    
+                border-bottom: solid 1px #323232;
+            }
+        }
+
+        &:not(:last-child) {
+            border-right: solid 1px #323232;
+
+            @media (max-width: 768px) {
+                flex-basis: 47%;
+
+                @media (max-width: 450px) {
+                    border-right: none;
+                    flex-basis: auto;
+                }
+            }
+            
+        }
+
+        &:not(:first-child) {
+            @media (max-width: 768px) {
+                margin-right: 0;
+                border-right: none;
+            }
+        }
+
+        &:last-child {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        &__number {
+            margin-bottom: 30px;
+        
+            font-family: 'Neue Montreal';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #BDBDBD;
+
+            @media (max-width: 768px) {
+                margin-bottom: 18px;
+            }
+        }
+
+        &__text {
+            padding-right: 40px;
+            font-family: 'Neue Haas Grotesk Display Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 27px;
+            color: #BDBDBD;
+
+            @media (max-width: 768px) {
+                padding-right: 18px;
+
+                @media (max-width: 450px) {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        &__container {
+            display: flex;
+            margin-left: 25%;
+            margin-top: 70px;
+
+            @media (max-width: 1260px) {
+                margin-left: 15%;
+            }
+
+            @media (max-width: 1020px) {
+                margin-left: 10%;
+            }
+
+            @media (max-width: 768px) {
+                margin-top: 55px;
+                margin-left: 0;
+                flex-wrap: wrap;
+
+                @media (max-width: 450px) {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    &__text_1 {
+        margin-top: 60px;
+        margin-left: 50%;
+        max-width: 764px;
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 27px;
+        color: #BDBDBD;
+
+        @media (max-width: 1260px) {
+            margin-left: 45%;
+        }
+
+        @media (max-width: 1020px) {
+            margin-left: 38%;
+        }
+
+        @media (max-width: 768px) {
+
+            margin-top: 25px;
+            margin-left: 0;
+            max-width: 608px;
+        }
+    }
+
+    &__text_2 {
+        margin-top: 40px;
+        margin-left: 50%;
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    
+        color: #fff;
+
+        @media (max-width: 1260px) {
+            margin-left: 45%;
+        }
+
+        @media (max-width: 1020px) {
+            margin-left: 38%;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 40px;
+            margin-left: 0;
+
+            @media (max-width: 450px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 180px;
+
+        @media (max-width: 768px) {
+            margin: 140px auto 0 auto;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+
+            @media (max-width: 450px) {
+                margin: 90px auto 0 auto;
+            }
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 8.33%;
+            
+            max-width: 634px;
+
+            &__img  {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        &__right {
+            max-width: 764px;
+        }
+
+        &__text {
+            font-family: 'Neue Haas Grotesk Display Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 27px;
+            color: #BDBDBD;
+
+            @media (max-width: 768px) {
+                padding-left: 80px;
+                margin-top: 40px;
+
+                @media (max-width: 450px) {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

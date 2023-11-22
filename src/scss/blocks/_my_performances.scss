@@ -1,0 +1,93 @@
+.my_performances {
+    margin-top: 180px;
+
+    @media (max-width: 768px) {
+        margin-top: 140px;
+
+        @media (max-width: 450px) {
+            margin-top: 90px;
+        }
+    }
+
+    &__container {
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        &__left {
+            max-width: 603px;
+            flex-basis: 41.67%;
+            margin-right: 10%;
+
+            @media (max-width: 450px) {
+                margin-right: 0;
+            }
+        }
+
+        &__right {
+            max-width: 764px;
+            flex-basis: 50%;
+        }
+    }
+
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 52px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+            line-height: 40px;
+
+            @media (max-width: 450px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+    
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 27px;
+        color: #E0E0E0;
+
+        @media (max-width: 768px) {
+            margin-top: 15px;
+            margin-bottom: 50px;
+
+            @media (max-width: 450px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__right__title {
+        margin-top: 80px;
+        margin-bottom: 25px;
+        max-width: 609px;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #F2F2F2;
+
+        @media (max-width: 450px) {
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+    }
+}
