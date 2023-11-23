@@ -22,6 +22,7 @@
 		"gulp-webp": "^4.0.1",
 		"gulp-webp-css": "^1.1.0",
 		"gulp-webp-html": "^1.0.2",
+		"gulp-webp-in-html": "^1.0.1",
 		"i": "^0.3.7",
 		"npm": "^9.7.2",
 		"sass": "^1.63.4",
