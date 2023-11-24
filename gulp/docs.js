@@ -3,7 +3,7 @@ const gulp = require('gulp');
 // HTML
 const fileInclude = require('gulp-file-include');
 const htmlclean = require('gulp-htmlclean');
-const webpHTML = require('gulp-webp-html');
+const webpHtmlNosvg = require('gulp-webp-html-nosvg');
 
 // SASS
 const sass = require('gulp-sass')(require('sass'));
@@ -22,6 +22,7 @@ const notify = require('gulp-notify');
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
 const changed = require('gulp-changed');
+const replace = require('gulp-replace');
 
 // Images
 const imagemin = require('gulp-imagemin');
@@ -58,7 +59,12 @@ gulp.task('html:docs', function () {
         .pipe(changed('./docs/'))
         .pipe(plumber(plumberNotify('HTML')))
         .pipe(fileInclude(fileIncludeSetting))
-        // .pipe(webpHTML()) 
+        .pipe(webpHtmlNosvg()) 
+		.pipe(replace('../../img/', 'img/'))
+		.pipe(replace('../../img/', 'img/'))
+		.pipe(replace('../img/', 'img/'))
+		.pipe(replace('../fonts/', 'fonts/'))
+		.pipe(replace('../../videos/', 'videos/'))
         .pipe(htmlclean())
         .pipe(gulp.dest('./docs/'));
 });
@@ -75,6 +81,7 @@ gulp.task('sass:docs', function () {
 		.pipe(groupMedia())
 		.pipe(sass())
 		.pipe(csso())
+		.pipe(replace('../../img/', '../img/'))
 		.pipe(sourceMaps.write())
 		.pipe(gulp.dest('./docs/css/'));
 });

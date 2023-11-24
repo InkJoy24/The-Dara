@@ -4,16 +4,13 @@ const navMobile = (navMobileBtnSelector, navMobileBlockSelector, navMobileLinkSe
     const navMobileBlock = document.querySelector(navMobileBlockSelector);
     const navMobileLinks = document.querySelectorAll(navMobileLinkSelector);
 
-    const isDownFlipped = navMobileBlock.classList.contains('a-flip-down');
-
-    const toggleTextBtn = () => {
-        navMobileBtn.textContent = isDownFlipped ? 'menu' : 'close';
-    }
-
+    
     const toggleNav = () =>  {
-        navMobileBlock.classList.toggle('a-flip-down');
+        navMobileBlock.classList.toggle('nav__mobile--open');
         document.body.classList.toggle('no-scroll');
-        toggleTextBtn();
+        const isNavOpened = navMobileBlock.classList.contains('nav__mobile--open');
+        navMobileBtn.textContent = (!isNavOpened ? 'close' : 'menu');
+        console.log(isNavOpened);
     }
 
     navMobileBtn.addEventListener('click', () => {
@@ -22,9 +19,9 @@ const navMobile = (navMobileBtnSelector, navMobileBlockSelector, navMobileLinkSe
 
     navMobileLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navMobileBlock.classList.remove('a-flip-down');
+            navMobileBlock.classList.remove('nav__mobile--open');
             document.body.classList.remove('no-scroll');
-            toggleTextBtn();
+            navMobileBtn.textContent = "menu";
         });
     });
 };

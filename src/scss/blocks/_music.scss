@@ -101,17 +101,19 @@
             cursor: pointer;
             color: inherit;
 
-            &::after {
-                content: '';
-                display: block;
-                width: 0;
-                padding-top: 3px;
-                border-bottom: 2px solid #C7C7C7;
-                transition: all 0.3s;
-            }
-
-            &:hover::after {
-                width: 100%;
+            @media (min-width: 768px) {
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    padding-top: 3px;
+                    border-bottom: 2px solid #C7C7C7;
+                    transition: all 0.3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                }
             }
         }
     }
@@ -213,18 +215,20 @@
             }
         }
 
-        &::after {
-            content: '';
-            display: block;
-            width: 0;
-            padding-top: 3px;
-            border-bottom: 2px solid #C7C7C7;
-            transition: all 0.3s;
-        
-        }
-
-        &:hover::after {
-            width: 100%;
+        @media (min-width: 768px) {
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                padding-top: 3px;
+                border-bottom: 2px solid #C7C7C7;
+                transition: all 0.3s;
+            
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
         }
     }
 
