@@ -7,9 +7,10 @@ const navMobile = (navMobileBtnSelector, navMobileBlockSelector, navMobileLinkSe
     
     const toggleNav = () =>  {
         navMobileBlock.classList.toggle('nav__mobile--open');
-        document.body.classList.toggle('no-scroll');
+        // document.body.classList.toggle('no-scroll');
         const isNavOpened = navMobileBlock.classList.contains('nav__mobile--open');
         navMobileBtn.textContent = (isNavOpened ? 'close' : 'menu');
+        isNavOpened ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')
     }
 
     navMobileBtn.addEventListener('click', () => {
