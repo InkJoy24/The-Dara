@@ -8,20 +8,33 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 4;
 
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.7);
     transition: opacity 200ms ease-in;
 
+    @media (max-width: 450px) {
+        align-items: flex-start;
+    }
+
     &__container {
         flex-basis: 81%;
+
+        @media (max-width: 450px) {
+            margin-top: 68px;
+        }
 
         &__top {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: flex-end;
+            }
         }
     }
 
@@ -29,7 +42,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 68px;
+        font-size: var(--title-font-size);
         line-height: 70px;
     
         letter-spacing: -0.02em;
@@ -37,6 +50,10 @@
     
         color: #FFFFFF;
         opacity: 0.7;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     
     }
 
@@ -46,6 +63,10 @@
 
     &__video-block {
         height: 80vh;
+
+        @media (max-width: 450px) {
+            height: 50vh;
+        }
     }
 
 }

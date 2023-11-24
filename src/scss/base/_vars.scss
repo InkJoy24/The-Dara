@@ -6,6 +6,10 @@
 	--font-accent: 'Playfair Display', serif;
 	--title-font-size: 68px;
 
+	@media (max-width: 1030px) {
+		--title-font-size: 58px
+	}
+
 	@media (max-width: 768px) {
 		--title-font-size: 48px
 	}
@@ -34,11 +38,11 @@
 
 	@media (max-width: 1004px) {
 		--font-size-front-side-title: 56px;	
-		--line-height-front-side-title: 68px
+		--line-height-front-side-title: 60px
 	}
 
 	@media (max-width: 873px) {
 		--font-size-front-side-title: 48px;	
-		--line-height-front-side-title: 58px
+		--line-height-front-side-title: 52px
 	}
 }

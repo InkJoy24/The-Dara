@@ -136,7 +136,6 @@
     &__text {
         flex-basis: 25%;
         max-width: 374px;
-        min-width: 241px;
         margin-left: 16px;
         font-family: 'Neue Haas Grotesk Display Pro';
         font-style: normal;
@@ -144,6 +143,10 @@
         font-size: 17px;
         line-height: 27px;
         color: #BDBDBD;
+
+        @media (max-width: 1150px) {
+            display: none;
+        }
 
         @media (max-width: 768px) {
             display: block;
@@ -161,7 +164,6 @@
         &__short {
             display: none;
             max-width: 608px;
-            margin-left: 0;
             margin-bottom: 40px;
             font-family: Neue Haas Grotesk Display Pro;
             font-size: 16px;
@@ -170,8 +172,19 @@
             line-height: 26px;
             color: #BDBDBD;
 
+            @media (max-width: 1150px) {
+                display: block;
+                flex-basis: 25%;
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
             @media (max-width: 450px) {
                 display: block;
+                margin-bottom: 40px;
             }
         }
     }

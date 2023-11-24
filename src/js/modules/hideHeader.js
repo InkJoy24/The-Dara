@@ -5,9 +5,9 @@ const hideHeader = (headerSelector) => {
         const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
 
         if (isAtBottom) {
-          header.classList.add('header-hide');
+          header.classList.add('none');
         } else {
-          header.classList.remove('header-hide');
+          header.classList.remove('none');
         };
     };
 
